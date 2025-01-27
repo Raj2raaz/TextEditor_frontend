@@ -1,0 +1,65 @@
+/* .header_container{
+    width: 60%;
+    display:flex;
+    justify-content: space-between;
+    
+
+    h2{
+        font-size: 40px;
+        font-weight: 600;
+        padding: 10px 20px;
+    }
+
+    button{
+        padding:0 5x;
+        border: 1px solid#5e6569;
+        display:flex;
+        gap:9px;
+        padding: 20px;
+        border-radius: 20px;
+        color:#929EAF;
+    }
+} */
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+    height: 100px; /* Adjust as needed to fit your header */
+    
+    .header_right_container{
+        display:flex;
+        align-items: center;
+        gap: 18px;
+        margin-right: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        padding: 10px 20px;
+        margin: 0; /* Remove any default margin */
+        height: 100%; /* Makes sure it fills the container height */
+        display: flex;
+        align-items: center; /* Aligns the text vertically */
+    }
+
+    .icon{
+        color:#49566A;
+    }
+
+    button {
+        border: 1px solid #a9afb2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 10px 20px; /* Ensure enough padding */
+        border-radius: 20px;
+        color: #49566A;
+        height: 100%; /* Makes sure it fills the container height */
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,80 @@
+.editors-tools {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 10px 20px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    max-width: 100%;
+  }
+  
+  .tool-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #929EAF;
+    transition: all 0.3s ease;
+  }
+  
+  .tool-button:hover {
+    color: #6c757d;
+    transform: scale(1.1);
+  }
+  
+  .ai-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #6B4EFF;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .ai-button:hover {
+    background: #563fd7;
+    transform: scale(1.05);
+  }
+  
+  .ai-icon {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 1200px) {
+    .editors-tools {
+      gap: 10px;
+      padding: 8px 15px;
+    }
+  
+    .tool-button {
+      font-size: 18px;
+    }
+  
+    .ai-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .editors-tools {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .tool-button, .ai-button {
+      font-size: 16px;
+    }
+  
+    .ai-button {
+      padding: 6px 10px;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.element_container{
+    padding:10px;
+    gap: 4px;
+    display:flex;
+
+    a{
+        display:flex;
+        gap:9px;
+        color:  #415B6E;
+    }
+    
+    .icon{
+        color: #929EAF;
+    }
+}

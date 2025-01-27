@@ -1,0 +1,28 @@
+.sidebar_wrapper{
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.sidebar_container{
+    padding-top:30px;
+    height: 100%;
+    width: 35%;
+    border-right: 1px solid #d6dde1;
+
+    .button_container{
+        margin-bottom: 30px;
+        display:flex;
+        justify-content: center;
+    }
+}
+
+.write_post_button{
+    background-color: #0AA4ED;
+    color:white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+}
+

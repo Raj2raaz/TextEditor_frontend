@@ -1,0 +1,21 @@
+.dashboard_container{
+    height: 100vh;
+    display:flex;
+}
+
+.write_post_container{
+    display:flex;
+    flex-direction:column;
+    width: 80%;
+    border-right: 1px solid #d6dde1;
+}
+
+.display_container{
+    background-color: #F8FAFD;
+    height: 100%;
+    width: 80%;
+    align-content: center;
+    display:flex;
+    justify-content: center;
+}
+
