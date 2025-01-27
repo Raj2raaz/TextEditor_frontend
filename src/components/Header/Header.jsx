@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import SpeedIcon from "@mui/icons-material/Speed";
 import myImg from "../../icons/person.jpg";
+import { useNavigate } from "react-router-dom";
 import "./header.css";
 
 function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const navigate = useNavigate()
 
   // Toggle dropdown visibility
   const toggleDropdown = () => {
@@ -28,7 +30,8 @@ function Header() {
 
   // Logout function
   const handleLogout = () => {
-    alert("Logged out successfully!");
+    // alert("Logged out successfully!");
+    navigate('/')
     setIsDropdownOpen(false);
   };
 

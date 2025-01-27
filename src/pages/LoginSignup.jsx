@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { signupUser, loginUser } from '../services/user.apiService';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,18 +10,22 @@ function LoginSignup() {
     const [isLogin, setIsLogin] = useState(true);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigate = useNavigate();
     const handleSubmit = async (e) => {
         // console.log("Clicked");
         e.preventDefault();
         try {
             if (isLogin) {
                 const response = await loginUser({ email, password });
-                console.log(response)
+                // console.log(response)
                 toast.success("Login successful: " + response.token);
+                navigate('/dashboard')
             } else {
                 const response = await signupUser({ email, password });
                 toast.success("Signup successful: " + response.message);
+                setIsLogin(true);
+                setEmail('');
+                setPassword('');
             }
         } catch (error) {
             toast.error(error.message || "An error occurred");

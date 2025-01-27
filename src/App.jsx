@@ -11,8 +11,8 @@ function App() {
       {/* <Navbar /> */}
       <div className="containerwa">
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/" element={<LoginSignup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route
             path="*"
             element={
